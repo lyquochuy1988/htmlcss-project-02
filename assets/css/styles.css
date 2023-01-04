@@ -34,7 +34,7 @@ a {
     min-width: 118px;
     padding: 0 16px;
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 50px;
     text-align: center;
     color: #ffffff;
@@ -563,10 +563,12 @@ a {
     display: flex;
     gap: 30px;
     margin-top: 55px;
+    overflow: hidden;
 }
 
 .blog .blog-list .blog-item {
-    width: 33%;
+    flex-shrink: 0;
+    width: calc(33.33% - 20px);
     background-color: #fff;
     border-radius: 16px;
 }
@@ -621,4 +623,32 @@ a {
     font-size: 1.6rem;
     line-height: 1.75;
     color: #171100;
+}
+
+.blog .info .btn {
+    font-size: 1.4rem;
+}
+
+.blog .info .btn:hover {
+    background-color: var(--primary);
+}
+
+.blog .dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 38px;
+}
+
+.blog .dots .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #5F5B53;
+    cursor: pointer;
+}
+
+.blog .dots .dot.active {
+    cursor: default;
+    background-color: var(--primary);
 }

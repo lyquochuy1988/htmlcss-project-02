@@ -413,7 +413,7 @@ a {
 }
 
 .feedback .feedback-item {
-    display: flex;    
+    display: flex;
     flex-shrink: 0;
     width: 100%;
 }
@@ -458,7 +458,7 @@ a {
 .feedback .control-dots .dot.active {
     background-color: var(--primary);
 }
- 
+
 .feedback-item .content {
     width: 66%;
     margin-left: auto;
@@ -471,4 +471,53 @@ a {
     font-size: 2.6rem;
     line-height: 1.54;
     color: #ffffff;
+}
+
+/* Feature */
+.feature {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.feature .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature .body .images {
+    display: flex;
+    gap: 0 30px;
+}
+
+.feature .images img {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.feature .images .lower {
+    margin-top: 34px;
+}
+
+.feature .content {
+    width: 41%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.feature .content .desc {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5f5b53;
+}
+
+.feature .content .cta-btn {
+    margin-top: 32px;
+    min-width: 137px;
+    color: #fff;
+    background-color: var(--primary);
 }
